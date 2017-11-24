@@ -44,3 +44,56 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 	height: auto;
 	max-height: calc(100vh - 80px);
 }
+
+/* dots styles */
+
+.my-dots {
+  position: absolute;
+  bottom: 80px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 0 18px;
+  padding: 0;
+	
+	border: 1px solid #ffffff;
+	border-radius: 50px;
+	
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+	border-radius: 50px;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+	background: #ffffff;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* dots styles */

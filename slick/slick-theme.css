@@ -193,10 +193,9 @@
 
     content: '•';
     text-align: center;
-		text-shadow: 0 0 10px #ffffff;
 
     opacity: .25;
-    color: #ffffff; /* цвет точек */
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
