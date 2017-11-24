@@ -28,7 +28,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	$(".slider").slick({
+	$(".main-slider").slick({
     dots: true
   });
 	

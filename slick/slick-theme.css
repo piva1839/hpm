@@ -66,6 +66,7 @@
 .slick-prev:before,
 .slick-next:before
 {
+		display: none; /* отображение стрелок переключения слайдера */
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
@@ -84,7 +85,7 @@
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -25px; /* позиционирование стрелок переключения слайдера */
     left: auto;
 }
 .slick-prev:before
@@ -104,7 +105,7 @@
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -25px; /* позиционирование стрелок переключения слайдера */
 }
 .slick-next:before
 {
@@ -124,7 +125,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 25px;
 
     display: block;
 
@@ -192,9 +193,10 @@
 
     content: '•';
     text-align: center;
+		text-shadow: 0 0 10px #ffffff;
 
     opacity: .25;
-    color: black;
+    color: #ffffff; /* цвет точек */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
