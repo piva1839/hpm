@@ -66,10 +66,11 @@
 .slick-prev:before,
 .slick-next:before
 {
-		display: none; /* отображение стрелок переключения слайдера */
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
+    
+    display: none; /* скрыл стрелки */
 
     opacity: .75;
     color: white;
@@ -85,7 +86,7 @@
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px; /* позиционирование стрелок переключения слайдера */
+    right: -25px; /* переместил стрелку внутрь слайдера */
     left: auto;
 }
 .slick-prev:before
@@ -105,7 +106,7 @@
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px; /* позиционирование стрелок переключения слайдера */
+    left: -25px; /* переместил стрелку внутрь слайдера */
 }
 .slick-next:before
 {
@@ -119,13 +120,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0px; /* убрал нижний отступ */
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: 25px;
+    bottom: -25px;
 
     display: block;
 
@@ -205,3 +206,74 @@
     opacity: .75;
     color: black;
 }
+
+/* my dots */
+
+.my-dots {
+  position: absolute;
+  bottom: 9.47%;
+  left: 10px;
+  display: block;
+  width: 99%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 9px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  border-radius: 50px;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+  background: #ffffff;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  content: "";
+  text-align: center;
+  background: url("../img/dots.svg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 50px;
+  opacity: 1;  
+}
+
+.my-dots li.slick-active button:before {
+  opacity: 1;
+  background: #ffffff;
+}
+
+/* my dots */
