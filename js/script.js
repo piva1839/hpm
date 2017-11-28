@@ -10,6 +10,10 @@ $(document).ready(function(){
     dots: true,
     dotsClass: "my-dots",
   });
+	
+	$(".more-menu-items").click(function(event) {
+		event.preventDefault();
+  });
   
   $(".more-menu-items").mouseover(function() {
     $(".subitems").css("display","block");
